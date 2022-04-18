@@ -1,7 +1,10 @@
+const URL = "/products/buy"
+
+// TODO: refactor
 $("a[data-product='flash'").click(function () {
     $(this).html("<i class='fa fa-refresh fa-spin fa-3x fa-fw'></i>");
     $.ajax({
-        url: "/buy",
+        url: URL,
         type: "POST",
         data: {
             product: "flash",
@@ -15,7 +18,7 @@ $("a[data-product='flash'").click(function () {
 $("a[data-product='lumi'").click(function () {
     $(this).html("<i class='fa fa-refresh fa-spin fa-3x fa-fw'></i>");
     $.ajax({
-        url: "/buy",
+        url: URL,
         type: "POST",
         data: {
             product: "lumi",
@@ -29,7 +32,7 @@ $("a[data-product='lumi'").click(function () {
 $("a[data-product='flashPro'").click(function () {
     $(this).html("<i class='fa fa-refresh fa-spin fa-3x fa-fw'></i>");
     $.ajax({
-        url: "/buy",
+        url: URL,
         type: "POST",
         data: {
             product: "flashPro",

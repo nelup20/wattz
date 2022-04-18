@@ -29,6 +29,7 @@
 #aboutWattz div {
   margin-top: 20px;
   display: none;
+  white-space: pre-line;
 }
 
 #aboutWattz div:last-child {
