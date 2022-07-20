@@ -2,10 +2,12 @@ const express = require("express"),
       app = express(),
       bodyParser = require("body-parser"),
       path = require("path"),
-      cors = require("cors");
+      cors = require("cors"),
+      helmet = require("helmet");
 
 const PORT = process.env.PORT || 8080;
 
+app.use(helmet());
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.set("views", `${__dirname}/src/views`)
